@@ -1,0 +1,5 @@
+/* Sets all the text color of the timestamp to a muted grey */
+.timestamp-muted {
+  color: var(--text-muted);
+  font-size: 0.85em;
+}

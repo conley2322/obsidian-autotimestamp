@@ -1,0 +1,10 @@
+{
+  "id": "obsidian-autotimestamp",
+  "name": "AutoTimeStamp",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Automatically inserts timestamps when pressing Enter in Markdown files",
+  "author": "Conley",
+  "authorUrl": "https://obsidian.md",
+  "isDesktopOnly": false
+}
