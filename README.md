@@ -1,105 +1,97 @@
-# Obsidian AutoTimestamp Plugin
+#Obsidian 自动时间戳插件
 
-An Obsidian plugin that automatically inserts timestamps when pressing Enter.
+一个在按下回车键时自动插入时间戳的Obsidian插件。
 
-## Features
+##功能
 
-- Automatically adds timestamps when pressing Enter at the end of a line
-- Customizable timestamp format
-- Multiple timestamp styles (brackets, comment, parentheses, angle brackets, custom)
-- File and folder pattern matching to control where timestamps are inserted
-- Live preview of timestamp format
-- Easy-to-use settings interface
+-在行尾按下回车键时自动添加时间戳
 
-## Installation
+-多种时间戳样式（方括号、注释、圆括号、尖括号、自定义）
 
-### From Obsidian Community Plugins
+-时间戳格式的实时预览
+-易于使用的设置界面
 
-1. Open Obsidian
-2. Go to Settings > Community plugins
-3. Search for "AutoTimestamp"
-4. Click "Install"
-5. Click "Enable"
+##安装
 
-### From GitHub
+###来自GitHub
 
-1. Download the latest release from the [Releases](https://github.com/yourusername/obsidian-autotimestamp/releases) page
-2. Extract the zip file to your Obsidian plugins folder: `{vault}/.obsidian/plugins/`
-3. Restart Obsidian
-4. Enable the plugin in Settings > Community plugins
+1.从[发布](https://github.com/yourusername/obsidian-autotimestamp/releases)页面下载最新版本
+`{vault}/.obsidian/plugins/`
+3. 重启Obsidian
+4. 在设置 > 社区插件中启用该插件
 
-## Usage
+##使用说明
 
-1. Open the plugin settings to configure:
-   - Time format (e.g., `YYYY-MM-DD HH:mm:ss`)
-   - Timestamp style (brackets, comment, etc.)
-   - Custom wrapper symbols (if using custom style)
-   - Folder and file patterns to control where timestamps are inserted
+1.打开插件设置进行配置：
+   -时间格式（例如：`)
+   -时间戳样式（括号、注释等）
 
-2. Start typing in a Markdown file
-3. Press Enter at the end of a line - a timestamp will be automatically added
+   -文件夹和文件模式，用于控制时间戳的插入位置
 
-## Configuration
 
-### Time Format
+3.在行尾按Enter键——将自动添加时间戳
 
-Supports the following placeholders:
-- `YYYY` - 4-digit year
-- `MM` - 2-digit month (01-12)
-- `DD` - 2-digit day (01-31)
-- `HH` - 2-digit hour (00-23)
-- `mm` - 2-digit minute (00-59)
-- `ss` - 2-digit second (00-59)
+##配置
 
-Example: `YYYY-MM-DD HH:mm:ss` → `2026-03-28 14:30:45`
+###时间格式
 
-### Timestamp Styles
+支持以下占位符：
+- `YYYY`- 4位年份
+- `MM`- 两位数月份（01-12）
 
-- **Brackets**: ` [2026-03-28 14:30:45]`
-- **Comment**: ` %%2026-03-28 14:30:45%%` (hidden in preview)
-- **Parentheses**: ` (2026-03-28 14:30:45)`
-- **Angle**: ` <2026-03-28 14:30:45>`
-- **Custom**: Use your own wrapper symbols
+ `HH`- 2位小时（00-23）
+- `mm`- 2位分钟（00-59）
+- `ss`- 2位秒（00-59）
 
-### File and Folder Patterns
+示例：`YYYY-MM-DD HH:mm:ss` → `2026-03-28 14:30:45`
 
-- **Folder patterns**: Control which folders get timestamps
-  - Example: `Notes, Diary` → timestamps in Notes and Diary folders
-  - Supports wildcards: `Notes/*` → all subfolders of Notes
+###时间戳样式
 
-- **File patterns**: Control which files get timestamps
-  - Example: `*.md, todo-*` → timestamps in all Markdown files and files starting with "todo-"
-  - Supports wildcards: `G*` → files starting with "G"
+- **方括号**: ` [2026-03-28 14:30:45]`
+**: ` %%2026-03-28 14:30:45%%`（预览中隐藏）
+- **括号**: ` (2026-03-28 14:30:45)`
+- **角度**: ` <2026-03-28 14:30:45>`
+- **自定义**: 使用您自己的包装符号
 
-## Development
+###文件和文件夹模式
 
-### Prerequisites
+- **文件夹模式**: 控制哪些文件夹获取时间戳
+  -示例：`→ 便笺和日记文件夹中的时间戳
+  -支持通配符：`便笺/*`→ 便笺的所有子文件夹
+
+**：控制哪些文件获取时间戳
+  -示例：`*.md, todo-*`→ 所有Markdown文件以及以“todo-”开头的文件获取时间戳
+  -支持通配符：`→ 以“G”开头的文件
+
+##开发
+
+###前提条件
 
 - Node.js 16+
-- npm or yarn
+-npm 或 yarn
 
-### Setup
+###设置
 
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Start development server: `npm run dev`
-4. Build for production: `npm run build`
+1.克隆仓库
+2.安装依赖：`npm 安装`
+3.启动开发服务器：`npm run dev`
+4.构建生产环境：`npm run build`
 
-### Testing
+###测试
 
-The plugin is tested in Obsidian v0.15.0+
+此插件已在Obsidian v0.15.0+中经过测试
 
-## License
+##许可证
 
 MIT
 
-## Author
+##作者
 
 Conley
 
-## Support
+##支持
 
-If you like this plugin, consider supporting the development:
-- Star the repository on GitHub
-- Leave a review in the Obsidian Community Plugins store
-- Report bugs and suggest features in the [Issues](https://github.com/yourusername/obsidian-autotimestamp/issues) section
+如果您喜欢此插件，请考虑支持开发：
+-在 GitHub 上收藏此仓库
+-在Obsidian社区插件商店留下评价
+-在[问题](https://github.com/yourusername/obsidian-autotimestamp/issues)部分报告错误并提出功能建议
